@@ -45,7 +45,7 @@
 						<developmentBranch>develop</developmentBranch>
 						<releaseBranchPrefix>release/</releaseBranchPrefix>
 						<hotfixBranchPrefix>hotfix/</hotfixBranchPrefix>
-						<versionTagPrefix></versionTagPrefix>
+						<versionTagPrefix>v</versionTagPrefix>
 						<origin>origin</origin>
 					</gitFlowConfig>
 
