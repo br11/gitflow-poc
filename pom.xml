@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>br11.github.com</groupId>
 	<artifactId>gitflow-poc</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.1</version>
 	
 	<properties>
 		<exec.mainClass>GitFlow POC</exec.mainClass>
@@ -33,16 +33,32 @@
 				</configuration>
 			</plugin>
 			<plugin>
-				<groupId>external.atlassian.jgitflow</groupId>
-				<artifactId>jgitflow-maven-plugin</artifactId>
-				<version>1.0-m5.1</version>
+				<groupId>com.amashchenko.maven.plugin</groupId>
+				<artifactId>gitflow-maven-plugin</artifactId>
+				<version>1.9.0</version>
 				<configuration>
-					<flowInitContext>
-						<masterBranchName>master</masterBranchName>
-						<developBranchName>develop</developBranchName>
-						<releaseBranchPrefix>release-</releaseBranchPrefix>
-						<versionTagPrefix>version-</versionTagPrefix>
-					</flowInitContext>
+					<installProject>false</installProject>
+					<verbose>false</verbose>
+
+					<gitFlowConfig>
+						<productionBranch>master</productionBranch>
+						<developmentBranch>develop</developmentBranch>
+						<releaseBranchPrefix>release/</releaseBranchPrefix>
+						<hotfixBranchPrefix>hotfix/</hotfixBranchPrefix>
+						<versionTagPrefix></versionTagPrefix>
+						<origin>origin</origin>
+					</gitFlowConfig>
+
+					<commitMessages>
+						<hotfixStartMessage>${project.artifactId} - update versions for hotfix</hotfixStartMessage>
+						<hotfixFinishMessage>${project.artifactId} - update for next development version</hotfixFinishMessage>
+						
+						<releaseStartMessage>${project.artifactId} - update versions for release</releaseStartMessage>
+						<releaseFinishMessage>${project.artifactId} - update for next development version</releaseFinishMessage>
+						
+						<tagHotfixMessage>${project.artifactId} - tag hotfix</tagHotfixMessage>
+						<tagReleaseMessage>${project.artifactId} - tag release</tagReleaseMessage>
+					</commitMessages>
 				</configuration>
 			</plugin>
 		</plugins>
