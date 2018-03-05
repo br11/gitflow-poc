@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>br11.github.com</groupId>
 	<artifactId>gitflow-poc</artifactId>
-	<version>0.0.13</version>
+	<version>0.0.14</version>
 	
 	<properties>
 		<exec.mainClass>GitFlow POC</exec.mainClass>
@@ -37,7 +37,7 @@
 				<artifactId>gitflow-maven-plugin</artifactId>
 				<version>1.9.0</version>
 				<configuration>
-					<installProject>false</installProject>
+					<installProject>true</installProject>
 					<verbose>false</verbose>
 
 					<gitFlowConfig>
