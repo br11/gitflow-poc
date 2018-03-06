@@ -10,6 +10,14 @@
 		<version>0.0.19-SNAPSHOT</version>
 	</parent>
 
+	<dependencies>
+		<dependency>
+			<groupId>br11.github.com</groupId>
+			<artifactId>gitflow-poc.module2</artifactId>
+			<version>0.0.19-SNAPSHOT</version>
+		</dependency>
+	</dependencies>
+
 	<build>
 		<plugins>
 			<plugin>
