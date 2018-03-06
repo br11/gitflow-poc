@@ -3,10 +3,10 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>br11.github.com</groupId>
-	<artifactId>gitflow-poc</artifactId>
+	<artifactId>gitflow-poc.parent</artifactId>
 	<version>0.0.17-SNAPSHOT</version>
 	<packaging>pom</packaging>
-<!--	
+	
 	<dependencyManagement>
 		<dependencies>
 			<dependency>
@@ -16,13 +16,7 @@
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
--->
-	<modules>
-		<module>gitflow-poc.parent</module>
-		<module>gitflow-poc.module1</module>
-		<module>gitflow-poc.module2</module>
-	</modules>
-<!--	
+	
 	<build>
 		<pluginManagement>
 			<plugins>
@@ -66,5 +60,5 @@
 			</plugins>
 		</pluginManagement>
 	</build>
--->
+
 </project>

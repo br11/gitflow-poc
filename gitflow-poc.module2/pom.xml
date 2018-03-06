@@ -6,8 +6,9 @@
 	
 	<parent>
 		<groupId>br11.github.com</groupId>
-		<artifactId>gitflow-poc</artifactId>
+		<artifactId>gitflow-poc.parent</artifactId>
 		<version>0.0.17-SNAPSHOT</version>
+		<relativePath>../gitflow-poc.parent/pom.xml</relativePath>
 	</parent>
 	
 	<dependencies>
