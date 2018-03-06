@@ -7,8 +7,16 @@
 	<parent>
 		<groupId>br11.github.com</groupId>
 		<artifactId>gitflow-poc</artifactId>
-		<version>0.0.18</version>
+		<version>0.0.19</version>
 	</parent>
+
+	<dependencies>
+		<dependency>
+			<groupId>br11.github.com</groupId>
+			<artifactId>gitflow-poc.module2</artifactId>
+			<version>0.0.19</version>
+		</dependency>
+	</dependencies>
 
 	<build>
 		<plugins>
