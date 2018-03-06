@@ -6,17 +6,9 @@
 	
 	<parent>
 		<groupId>br11.github.com</groupId>
-		<artifactId>gitflow-poc.parent</artifactId>
-		<version>0.0.17-SNAPSHOT</version>
-		<relativePath>../gitflow-poc.parent/pom.xml</relativePath>
+		<artifactId>gitflow-poc</artifactId>
+		<version>0.0.17</version>
 	</parent>
-	
-	<dependencies>
-		<dependency>
-			<groupId>com.amashchenko.maven.plugin</groupId>
-			<artifactId>gitflow-maven-plugin</artifactId>
-		</dependency>
-	</dependencies>
 
 	<build>
 		<plugins>
